@@ -1,0 +1,148 @@
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.hero-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url("background1.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+
+.hero-link{
+    margin-top: 5vh;
+    padding: 1.3vh 2vw;
+    border-radius: 15px;
+    background-color: rgb(235, 201, 134);
+    border: solid 2px black;
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+}
+.hero-link:hover {
+    background-color: rgb(0, 0, 0);
+    padding: 2vh 3vw;
+    color: rgb(235, 201, 134);
+    text-decoration: unset;
+    border: solid 3px rgb(235, 201, 134);
+}
+
+.hero {
+   
+    margin-top: 17%;
+    font-family: lobster;
+    font-size: 9vh;
+    letter-spacing: -0.02em;
+    color: rgb(63, 63, 60)
+}
+.web {
+    font-size: 1.7em;
+}
+.hero-text {
+    position: relative;
+    bottom: 100vh;
+}
+.main-div {
+    margin-top: -50vh;
+}
+
+.text {
+    font-family: lobster;
+    font-weight: 500;
+    font-size: 3.9em;
+}
+
+.skills{
+    margin-top: 12vh;
+}
+
+
+.second-div {
+    margin-top: 20vh;
+    padding-top: 8vh;
+    padding-bottom: 15vh;
+    background-color: rgb(226, 213, 213);
+}
+.exp{
+    margin-top: 12vh;
+}
+.txt {
+    margin-top: 7vh;
+}
+
+.travel {
+    margin-top: 4vh;
+    color: rgb(116, 109, 109)
+}
+.travel-link {
+    color: black;
+}
+
+.img {
+    margin-top: 3vh;
+    margin-left: 10vh;
+    height: 37vh;
+    width: 40vw;
+}
+
+.words {
+    margin-top: 6vh;
+}
+ 
+.text-1 {
+    padding-top: 16vh;
+}
+
+.third-div{
+    background-color: rgb(235, 201, 134);
+    padding-bottom: 12vh;
+}
+
+.para {
+    padding-top: 10vh;
+    font-size: 35px;
+}
+
+.work-link:hover {
+    background-color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 3vh 8vw;
+    color: rgb(235, 201, 134);
+    border: solid rgb(241, 189, 92) 2px;
+}
+
+.work-link {
+    font-size: 25px;
+    font-weight: 650;
+    border: solid black 3px;
+    background-color: rgb(235, 201, 134);
+    margin-top: 5vh;
+    padding: 2vh 7vw;
+    border-radius: 25px;
+}
+
+footer {
+    padding-top: 5vh;
+    background-color: rgb(0, 0, 0);
+    font-family: lobster;
+    color: rgb(183, 184, 172);
+}
+
+ul,h4 {
+    margin-left: 25vh;
+}
+
+.icons {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 7vh;
+    width: 5vw;
+
+}
