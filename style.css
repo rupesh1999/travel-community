@@ -1,0 +1,303 @@
+#logo{
+    font-size: 4vh;
+    font-family: pangolin;
+}
+
+#navigation {
+    background-color: rgb(214, 209, 209);
+    opacity: 0.7;
+}
+
+.homescreen {
+    position: relative;
+    top: 1vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url("background.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-text {
+    color: rgb(0, 0, 0);
+    font-size: 9vh;
+    position: relative;
+    top: 24vh;
+    left: 23vw;
+    font-weight: 900;
+    font-style: bold;
+    font-family: risque;
+    background-color: rgb(230, 223, 223);
+    display: inline;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 10px 5px;
+    animation-name: swift2;
+    animation-duration: 1s;
+}
+
+
+.hero-btn {
+    position: relative;
+    top: 35vh;
+    padding: 10px 40px;
+    font-family: Courier New, Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.hero-btn:hover {
+    background-color: black;
+    color: rgb(67, 175, 207);
+    transform: scale(1.25);
+    border: black solid 2px;
+}
+
+.second-container {
+    background-color: rgb(235, 224, 224);
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .second {
+    
+    }
+    .second-heading {
+        padding-bottom: 20px;
+        position: relative;
+    
+    }
+    .second-para{
+        position: relative;
+        bottom: 3vh;
+    }
+    .hero-text{
+        position: relative;
+        left: 1vh;
+        bottom: 120px;
+        font-size: 35px;
+        padding: 10px 5px;
+    }
+    .hero-btn{
+        position: relative;
+        bottom: 260px;
+        background-color: rgb(67, 175, 207);
+        border: 2px solid black;
+    }
+    .image{
+        position: relative;
+        top: 4vh;
+        left: 5vw;
+    }
+}
+   
+.second-heading {  
+    color: rgb(67, 175, 207); 
+    padding-top: 20px;
+    font-family: risque;
+    font-size: 50px;
+    
+}
+.second-para {
+    color: rgb(126, 122, 122);
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 688;
+   
+}
+
+.image {
+    position: relative;
+    bottom: 5vh;
+    border-radius: 20px;
+    height: 400px;
+    width: 350px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.swing {
+    animation: swing ease-in-out 2s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+@keyframes swift {
+   from{transform: translateX(-100px); opacity:0;}
+   to{transform: translateX(0px); opacity:1;}
+}
+
+@keyframes swift2 {
+   from {transform: translateX(100px); opacity:0;}
+   to{transform: translateX(0px);opacity:1;}
+}
+
+@keyframes round {
+    0% {
+        transform-origin:  400% 0%;
+        transform: rotate(0deg);
+    }
+    50% {
+        transform-origin: 400% 0%;
+        transform: rotate(360deg);
+    }
+    50.1% {
+        transform-origin: -350% 0%;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: -350% 0%;
+        transform: rotate(-360deg);
+    }
+}
+
+.animate {
+    animation-name: swift;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.0s;
+}
+.animate-para {
+    animation-name: swift2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.0s;
+}
+
+.holder {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.circles {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color:rgb(59, 170, 230);
+    position: relative;
+    top: 20vh;
+    left: 50vw;
+    animation: round 3s linear infinite;
+}
+
+.circles:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.circles:nth-child(3) {
+    animation-delay: -0.8s;
+}
+
+
+.third-div{
+    position: relative;
+    top: 40vh;
+    font-family: risque;
+    font-weight: 600;
+    font-size: 50px;
+    color: rgb(103, 181, 226);
+    letter-spacing: 2px;
+}
+
+.second-para:nth-child(2) {
+    position: relative;
+    top:40vh;
+}
+
+.btn1 {
+    position: relative;
+    top: 44vh;
+    padding: 10px 40px;
+    font-family: Courier New, Courier, monospace;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 20px;
+    border: 2px solid rgb(67, 175, 207);
+    background-color: transparent;
+    transition: 0.25s ease-out;
+    animation-name: swift2;
+    animation-duration: 1s;
+}
+
+.btn1:hover {
+    background-color: black;
+    color: rgb(67, 175, 207);
+    transform: scale(1.25);
+    border: black solid 2px;
+}
+
+
+
+
+
+
+
+
+.footer {
+     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+     background-blend-mode: multiply;
+}
+
+.footer-logo{
+    position: relative;
+    bottom: 40px;
+    text-decoration: underline;
+}
+
+.contact {
+    position: relative;
+    bottom: 100px;
+    color: rgb(103, 181, 226);
+    text-decoration: underline;
+    letter-spacing: 4px;
+}
+
+.logo {
+   position: relative;
+   bottom:70px;
+   opacity: 0.7;
+}
+.logo1{
+    transition: 0.25s ease-out;
+}
+.logo1:hover {
+    transform: scale(1.25);
+}

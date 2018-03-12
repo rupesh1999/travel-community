@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <div class="homescreen" id="bg">
+    <nav class="navbar"id="navigation">
+        <div class="container-fluid">
+             <div class="navbar-header">
+                <a class="navbar-brand " id="logo" href="#">TravelCommunity</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+    <h1 class="hero-text text-center col-xm-8">Your Stories....Our Stories</h1>
+    <div class="text-center">
+        <button href="#" class="hero-btn"> Tell US </button>
+    </div>
+</div>
+<div class="container-fluid second">
+  <div class="row second-container">
+    <div class="second col-lg-8 col-sm-12 bounceInLeft">
+        <hr>
+        <h2 class="text-center second-heading" id="travel">Travel Community</h2><hr>
+        <p class="text-center second-para col-sm-8 col-md-12 col-lg-12"> Travel community is all about sharing your travel stories with us and the Whole World.share the places you love, learn more about your favorite places and the places you’ve always wanted to visit.</p>
+    </div>
+    <div class=" col-lg-4 col-sm-12 swing">
+        <img src="images\image1.jpg"class="image">
+    </div>
+  </div>
+</div>
+
+
+<div class="holder">
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="container">
+        <div class="text-center div">
+            <h1 class="third-div">The Travel Social Media</h1>
+            <p class="second-para">Share your photos and vedios. See what others are up to. Cuzz TRAVEl is life.</p>
+            <button href="#" class="btn1">Try Now</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="container-fluid footer">
+    <hr>
+    <div class="text-center footer-logo">
+        <img src="images\logo.png" alt="Our Logo" >
+    </div>
+    <h1 class="text-center contact">Contact Us</h1>
+    <div class="text-center">
+    <ul class="logo row"  style="list-style: none;">
+        <div class="col-lg-4"></div>
+        <li class="col-lg-1 col-xs-6 logo1"><img src="images\facebook.png"></li>
+        <li class="col-lg-1 col-xs-6 logo1"><img src="images\youtube.png"></li>
+        <li class="col-lg-1 col-xs-6 logo1"><img src="images\insta.png"></li>
+        <li class="col-lg-1 col-xs-6 logo1"><img src="images\linkedin.png"></li>
+    </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 200) {
+        //clearHeader, not clearheader - caps H
+        $(".second-heading").addClass("animate");
+    }
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 300) {
+        //clearHeader, not clearheader - caps H
+        $(".second-para").addClass("animate-para");
+    }
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 700) {
+        //clearHeader, not clearheader - caps H
+        $(".footer-logo").addClass("animate-para");
+    }
+});
+
+$(window).scroll(function() {
+    parallax();
+})
+
+function parallax() {
+    var vscroll=$(window).scrollTop();
+    $(".homescreen").css("background-position","center " + (-vscroll*0.6) + "px")
+}
+
+</script>
+
+
+</body>
+</html>
